@@ -1,6 +1,6 @@
 # Machine Learning Engineering Path 🚀
 
-![Python Version](https://img.shields.io/badge/python-3.9%2B-blue?style=flat&logo=python)
+![Python Version](https://img.shields.io/badge/python-3.11%2B-blue?style=flat&logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat)
 ![Status](https://img.shields.io/badge/status-active_learning-orange?style=flat)
 
