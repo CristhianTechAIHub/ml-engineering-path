@@ -205,3 +205,36 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ---------------------------------------
+# MACHINE LEARNING SPECIFIC (MANDATORY)
+# ---------------------------------------
+
+# 1. Datasets y Datos Crudos
+/data/
+/datasets/
+*.csv
+*.tsv
+*.json
+*.xml
+*.parquet
+*.xls
+*.xlsx
+*.zip
+*.tar.gz
+
+# 2. Modelos Entrenados y Checkpoints
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt       # PyTorch
+*.pth      # PyTorch
+*.onnx
+*.keras
+*.joblib   # Scikit-Learn models
+
+# 3. Logs de entrenamiento (Tensorboard, WandB)
+/logs/
+/runs/
+/wandb/
