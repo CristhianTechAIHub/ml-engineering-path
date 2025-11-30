@@ -1,0 +1,124 @@
+/* Reset básico para quitar márgenes por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fuente tipo "Tech" */
+    background-color: #f0f2f5;
+    /* Gris muy suave, típico de dashboards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* La tarjeta blanca principal */
+.main-card {
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    /* Ancho máximo para que no se estire demasiado */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    /* Sombra suave y moderna */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- AQUÍ ESTÁ LA MAGIA DE LA CUADRÍCULA --- */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas iguales */
+    gap: 20px;
+    /* Espacio entre casillas */
+}
+
+/* Estilo de cada cajita de input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    /* Etiquetas en mayúscula se ven pro */
+    letter-spacing: 0.5px;
+}
+
+input,
+select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #fafafa;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    /* Color azul índigo al hacer clic */
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Botón grande y atractivo */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-predict {
+    background-color: #4f46e5;
+    /* Azul Indigo */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    /* Botón ancho completo en móviles */
+    transition: background-color 0.2s;
+}
+
+.btn-predict:hover {
+    background-color: #4338ca;
+    /* Un poco más oscuro al pasar el mouse */
+}
+
+/* Responsivo: Si la pantalla es pequeña (celular), usa 1 sola columna */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-card" style="text-align: center;">
+        <h1>Predicción Exitosa ✨</h1>
+
+        <p>El valor estimado de la casa es:</p>
+
+        <h2 style="color: #4f46e5; font-size: 40px;">
+            ${{ predicted_price }}
+        </h2>
+
+        <br>
+
+        <a href="{{ url_for('home') }}" class="btn-predict" style="text-decoration: none;">
+            Calcular otra vez
+        </a>
+    </div>
+</body>
+
+</html>
